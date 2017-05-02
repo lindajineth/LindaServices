@@ -10,6 +10,8 @@ EXPOSE 8080 9990
 
 ENTRYPOINT $JBOSS_HOME/bin/standalone.sh
 
+ADD HolaMundoEAR.ear "$JBOSS_HOME/standalone/deployments/"
 
+USER jboss
+CMD /bin/bash
 
-#CMD ["/opt/jboss/wildfly-8.2.1.Final/bin/standalone.sh", "-b", "0.0.0.0"]
