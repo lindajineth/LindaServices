@@ -1,7 +1,7 @@
 FROM lindajineth/miprimerdocker:lindaflyservices
 
 # Set the WILDFLY_VERSION env variable
-ENV WILDFLY_VERSION 8.2.0.Final
+ENV WILDFLY_VERSION 8.2.1.Final
 
 # Set User Jboss
 USER  jboss
